@@ -6,6 +6,8 @@ import './dataBase/db.js';
 
 const app = express();
 
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+
 app.use(express.json());
 app.use(cors());
 app.use('/uploads', express.static(__dirname + '/uploads'));
