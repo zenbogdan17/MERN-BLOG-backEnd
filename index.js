@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import routes from './routes/index.js';
+import path from 'path';
 
 import './dataBase/db.js';
 
